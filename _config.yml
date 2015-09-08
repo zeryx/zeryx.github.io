@@ -1,5 +1,5 @@
 # Site settings
-title: zeryx's blog of cool ML stuff
+title: "zeryx's blog of cool ML stuff"
 email: james.sutton1211@gmail.com
 description: Just my little ML and data science blog, I like trying to tackle really hard problems, math and stats are super fun!
 baseurl: "" # the subpath of your site, e.g. /blog/
