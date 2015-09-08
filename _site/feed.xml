@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Sep 2015 22:17:06 -0300</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2015 22:17:06 -0300</lastBuildDate>
+    <title>zeryx.me</title>
+    <description>Just my little ML and data science blog, I like trying to tackle really hard problems, math and stats are super fun!</description>
+    <link>http://zeryx.me/blog//</link>
+    <atom:link href="http://zeryx.me/blog//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 07 Sep 2015 22:32:30 -0300</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2015 22:32:30 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -72,9 +71,10 @@
 &lt;p&gt;&lt;a name=&quot;globalQuakes&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;historic-global-earthquakes&quot;&gt;historic global Earthquakes&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;History doesn&#39;t repeat itself, but it does rhyme. - Mark Twain&lt;/code&gt;
-If you ask an analyst who plans to predict any future event, the very first piece of data they will ask for is historic records where previous events have occur ed.
-Thankfully the US National Centres for Environmental Information (NOAA) have some very nice &lt;a href=&quot;https://www.ngdc.noaa.gov/hazard/earthqk.shtml&quot;&gt;databases&lt;/a&gt; containing a wealth of historic earthquake events, this is arguably the most critical variable as fault lines would be pretty hard to discover without them.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;History doesn&#39;t repeat itself, but it does rhyme. - Mark Twain&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you ask an analyst who plans to predict any future event, the very first piece of data most of them will ask for ask for is historic records where similar events to what is being predicted have occured.
+Thankfully the US National Centres for Environmental Information (NOAA) have some very nice &lt;a href=&quot;https://www.ngdc.noaa.gov/hazard/earthqk.shtml&quot;&gt;databases&lt;/a&gt; containing a wealth of accurate earthquake events, this is arguably the most critical variable as fault-lines and at-risk areas would be pretty hard to discover without them.&lt;/p&gt;
 
 &lt;p&gt;The third variable is &lt;em&gt;historic earthquake data&lt;/em&gt;
 &lt;img src=&quot;https://postmediavancouversun.files.wordpress.com/2011/03/5700.japan_earthquake_heat_map_-_earthquake.jpg&quot; /&gt;&lt;/p&gt;
@@ -82,38 +82,29 @@ Thankfully the US National Centres for Environmental Information (NOAA) have som
 &lt;p&gt;&lt;a name=&quot;ml&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;cuda-and-the-power-of-the-cloud&quot;&gt;CUDA and the power of the cloud&lt;/h3&gt;
-&lt;p&gt;If there was one particular technological innovation that has left a huge mark over the past couple of decades, its the explosive growth of server farms and the advent of GPU instances. Machine learning requires a lot of compute power to create even minutely accurate models of natural phenomena, however GPGPUs have come to the rescue on that front, as the thousands of processors on a GPU device make tough and repetitive math intensive calculations such as &lt;a href=&quot;https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm&quot;&gt;Dijkstra’s&lt;/a&gt; or &lt;a href=&quot;https://en.wikipedia.org/wiki/Bayesian_network&quot;&gt;Bayesian networks&lt;/a&gt; relatively easy, assuming it can be made in parallel.&lt;/p&gt;
+&lt;p&gt;If there was one particular technological innovation that has left a huge mark over the past couple of decades, its the explosive growth of server farms and the advent of cloud computing. Machine learning requires a lot of compute power to create even minutely accurate models of natural phenomena, however general purpose GPU computing technologies have come to the rescue on that front, as the thousands of processors on a GPU device make tough and repetitive math intensive calculations such as &lt;a href=&quot;https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm&quot;&gt;Dijkstra&lt;/a&gt; or &lt;a href=&quot;https://en.wikipedia.org/wiki/Bayesian_network&quot;&gt;Bayesian networks&lt;/a&gt; much faster to calculate.&lt;/p&gt;
 
-&lt;p&gt;Unfortunately 1 GPU, no matter how powerful, isn’t going to cut it for most complex tasks, predicting earthquakes for example requires tons of inputs, and many long-short term memory neurons for state to be stored over long test cycles, which require huge amounts of compute power and large data sets. This is where Amazon’s web services help in a big way.&lt;/p&gt;
+&lt;p&gt;Unfortunately 1 GPU, no matter how powerful, isn’t going to cut it for most complex tasks it just takes too long. Predicting earthquakes for example requires dozens of inputs, a number hidden neurons and many long-short term memory neurons for state to be stored over long test cycles, which require huge amounts of compute power and large data sets. This is where Amazon’s web services help in a big way.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&quot;inst&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;gpu-instances-are-great&quot;&gt;GPU instances are great!&lt;/h4&gt;
-&lt;p&gt;When I first started working on this project (I got the idea, data and concepts from this &lt;a href=&quot;https://community.topcoder.com/longcontest/?module=ViewProblemStatement&amp;amp;rd=16510&amp;amp;pm=13913&quot;&gt;topcoder challenge&lt;/a&gt;), I knew I wouldn’t have the compute speed necessary to create an accurate model within a reasonable amount of time, so I started looking around for cloud based GPU instances, and I found amazon’s G2 instances a blast. Being able to rapidly scale up my algorithm, and run it over all of the trial data simutaniously (900 GBs worth split into 75 separate quake events) was something that I could never have dreamed of, particularily at the price I’m paying.&lt;/p&gt;
+&lt;p&gt;When I first started working on this project (I got the idea, data and concepts from this &lt;a href=&quot;https://community.topcoder.com/longcontest/?module=ViewProblemStatement&amp;amp;rd=16510&amp;amp;pm=13913&quot;&gt;topcoder challenge&lt;/a&gt;), I knew I wouldn’t have the compute capacity necessary to create an accurate model within a reasonable amount of time, so I started looking around at a variety of cloud based GPU instances, and I found amazon’s G2 instances a blast. Being able to rapidly scale up my algorithms, and run it over all of the trial data simutaniously (900 GBs worth split into 75 separate quake events) was something that I could never have dreamed of, particularily at the price I’m paying.&lt;/p&gt;
 
 &lt;p&gt;Spot instance pricing for G2 instances is hit or miss, but if you get them at the right time you can pay $0.07-0.2 USD per hour for some of the most advanced hardware on the market, it takes a while to learn how to setup automatic deployment &amp;amp; regional cost management, but third party projects such as &lt;a href=&quot;https://wiki.galaxyproject.org/CloudMan/AWS/GettingStarted&quot;&gt;CloudMan&lt;/a&gt; are a massive help.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&quot;ongoing&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;were-just-getting-warmed-up&quot;&gt;We’re just getting warmed up!&lt;/h3&gt;
+&lt;p&gt;The first of many posts, I’m just getting used to github pages &amp;amp; jekyll however I plan on working my way through all the juicy technical innards of my algorithm, and any results that are worth sharing!&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 07 Sep 2015 16:25:51 -0300</pubDate>
-        <link>http://yourdomain.com/cuda,/data/science,/machine/learning,/aws/2015/09/07/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/cuda,/data/science,/machine/learning,/aws/2015/09/07/welcome-to-jekyll.html</guid>
+        <link>http://zeryx.me/blog//data_science/2015/09/07/predicting-earthquakes.html</link>
+        <guid isPermaLink="true">http://zeryx.me/blog//data_science/2015/09/07/predicting-earthquakes.html</guid>
         
         
-        <category>cuda,</category>
-        
-        <category>data</category>
-        
-        <category>science,</category>
-        
-        <category>machine</category>
-        
-        <category>learning,</category>
-        
-        <category>aws</category>
+        <category>data_science</category>
         
       </item>
     

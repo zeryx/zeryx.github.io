@@ -1,10 +1,8 @@
 # Site settings
 title: zeryx.me
 email: james.sutton1211@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Just my little ML and data science blog, I like trying to tackle really hard problems,
-math and stats are super fun!
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: Just my little ML and data science blog, I like trying to tackle really hard problems, math and stats are super fun!
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
 url: "http://zeryx.me" # the base hostname & protocol for your site
 twitter_username: zeryx
 github_username:  zeryx
