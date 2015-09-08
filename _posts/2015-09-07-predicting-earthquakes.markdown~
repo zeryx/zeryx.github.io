@@ -64,8 +64,9 @@ The second variable is *K-Index*.
 
 #### historic global Earthquakes ####
 `History doesn't repeat itself, but it does rhyme. - Mark Twain`
-If you ask an analyst who plans to predict any future event, the very first piece of data they will ask for is historic records where previous events have occur ed.
-Thankfully the US National Centres for Environmental Information (NOAA) have some very nice [databases][noaa] containing a wealth of historic earthquake events, this is arguably the most critical variable as fault lines would be pretty hard to discover without them.
+
+If you ask an analyst who plans to predict any future event, the very first piece of data most of them will ask for ask for is historic records where similar events to what is being predicted have occured.
+Thankfully the US National Centres for Environmental Information (NOAA) have some very nice [databases][noaa] containing a wealth of accurate earthquake events, this is arguably the most critical variable as fault-lines and at-risk areas would be pretty hard to discover without them.
 
 The third variable is *historic earthquake data*
 <img src="https://postmediavancouversun.files.wordpress.com/2011/03/5700.japan_earthquake_heat_map_-_earthquake.jpg">
@@ -74,21 +75,21 @@ The third variable is *historic earthquake data*
 <a name="ml"></a>
 
 ### CUDA and the power of the cloud ###
-If there was one particular technological innovation that has left a huge mark over the past couple of decades, its the explosive growth of server farms and the advent of GPU instances. Machine learning requires a lot of compute power to create even minutely accurate models of natural phenomena, however GPGPUs have come to the rescue on that front, as the thousands of processors on a GPU device make tough and repetitive math intensive calculations such as [Dijkstra's][dijkstra] or [Bayesian networks][bnet] relatively easy, assuming it can be made in parallel.
+If there was one particular technological innovation that has left a huge mark over the past couple of decades, its the explosive growth of server farms and the advent of cloud computing. Machine learning requires a lot of compute power to create even minutely accurate models of natural phenomena, however general purpose GPU computing technologies have come to the rescue on that front, as the thousands of processors on a GPU device make tough and repetitive math intensive calculations such as [Dijkstra][dijkstra] or [Bayesian networks][bnet] much faster to calculate.
 
-Unfortunately 1 GPU, no matter how powerful, isn't going to cut it for most complex tasks, predicting earthquakes for example requires tons of inputs, and many long-short term memory neurons for state to be stored over long test cycles, which require huge amounts of compute power and large data sets. This is where Amazon's web services help in a big way.
+Unfortunately 1 GPU, no matter how powerful, isn't going to cut it for most complex tasks it just takes too long. Predicting earthquakes for example requires dozens of inputs, a number hidden neurons and many long-short term memory neurons for state to be stored over long test cycles, which require huge amounts of compute power and large data sets. This is where Amazon's web services help in a big way.
 
 <a name="inst"></a>
 
 #### GPU instances are great! ####
-When I first started working on this project (I got the idea, data and concepts from this [topcoder challenge][tpChallenge]), I knew I wouldn't have the compute speed necessary to create an accurate model within a reasonable amount of time, so I started looking around for cloud based GPU instances, and I found amazon's G2 instances a blast. Being able to rapidly scale up my algorithm, and run it over all of the trial data simutaniously (900 GBs worth split into 75 separate quake events) was something that I could never have dreamed of, particularily at the price I'm paying.
+When I first started working on this project (I got the idea, data and concepts from this [topcoder challenge][tpChallenge]), I knew I wouldn't have the compute capacity necessary to create an accurate model within a reasonable amount of time, so I started looking around at a variety of cloud based GPU instances, and I found amazon's G2 instances a blast. Being able to rapidly scale up my algorithms, and run it over all of the trial data simutaniously (900 GBs worth split into 75 separate quake events) was something that I could never have dreamed of, particularily at the price I'm paying.
 
 Spot instance pricing for G2 instances is hit or miss, but if you get them at the right time you can pay $0.07-0.2 USD per hour for some of the most advanced hardware on the market, it takes a while to learn how to setup automatic deployment & regional cost management, but third party projects such as [CloudMan][cloudman] are a massive help.
 
 <a name="ongoing"></a>
 
 ### We're just getting warmed up! ###
-
+The first of many posts, I'm just getting used to github pages & jekyll however I plan on working my way through all the juicy technical innards of my algorithm, and any results that are worth sharing!
 
 [gstorm]:      	https://en.wikipedia.org/wiki/Geomagnetic_storm
 [Klink]:	https://en.wikipedia.org/wiki/K-index

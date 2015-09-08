@@ -8,7 +8,7 @@ Forecasting stuff can be really, *really* hard.
 
 [Chaos theory][ChaosTheory] has destroyed more forecasting models than any government conspiracy or act of corporate espionage. Trying to predict what happens next in natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.
 
-Because we'll never *truly* have the [initial state of anything,][hsp] accurate molecular dynamics & and prediction are still off the table. But for larger scale phenomena like the weather or **Earthquakes**, we've been able to make reasonable predictive models that have created huge socioeconomic benefit for those who rely on such systems, like farmers who can now grow more crops, or those living in at-risk areas where accurate early warning systems can literally be the difference between life and death.
+Because we'll never *truly* have the [initial state of anything,][hsp] accurate molecular dynamics and prediction are still off the table. But for larger scale phenomena like the weather or **Earthquakes**, we've been able to make reasonable predictive models that have created huge socioeconomic benefit for those who rely on such systems, like farmers who can now grow more crops, or those living in at-risk areas where accurate early warning systems can literally be the difference between life and death.
 
 I've thrown my hat into the fray of earthquake prediction, and over the next week or so I'll be discussing different topics that are important when trying to tackle such a challenging problem.
 
