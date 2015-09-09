@@ -5,18 +5,31 @@
     <description>Just my little ML and data science blog, I like trying to tackle really hard problems, math and stats are super fun!</description>
     <link>http://zeryx.github.io/</link>
     <atom:link href="http://zeryx.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Sep 2015 12:28:52 -0300</pubDate>
-    <lastBuildDate>Wed, 09 Sep 2015 12:28:52 -0300</lastBuildDate>
+    <pubDate>Wed, 09 Sep 2015 13:00:50 -0300</pubDate>
+    <lastBuildDate>Wed, 09 Sep 2015 13:00:50 -0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
+        <title>Finding Signal With Cuda</title>
+        <description>
+</description>
+        <pubDate>Wed, 09 Sep 2015 00:00:00 -0300</pubDate>
+        <link>http://zeryx.github.io/2015/09/09/Finding-signal-with-Cuda.html</link>
+        <guid isPermaLink="true">http://zeryx.github.io/2015/09/09/Finding-signal-with-Cuda.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>keeping tabs on The Big One</title>
-        <description>&lt;p&gt;Prediction can be really, &lt;em&gt;really&lt;/em&gt; hard.&lt;/p&gt;
+        <description>&lt;p&gt;Prediction is be really, &lt;em&gt;really&lt;/em&gt; hard.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Chaos_theory&quot;&gt;Chaos theory&lt;/a&gt; has destroyed more prediction models than any government conspiracy or act of corporate espionage. Trying to predict what will happen within a given time-frame for natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.&lt;/p&gt;
 
-&lt;p&gt;Because we’ll never &lt;em&gt;truly&lt;/em&gt; have the &lt;a href=&quot;https://en.wikipedia.org/wiki/Uncertainty_principle&quot;&gt;initial state of anything,&lt;/a&gt; perfectly accurate predictive systems are currently impossible. But for larger scale phenomena like the weather or &lt;strong&gt;Earthquakes&lt;/strong&gt;, we’ve gotten really good at creating accurate, reliable forecasts. The major difference between a forecast and a prediction is a prediction states that a particular event will happen at time X assuming Y conditions are met, whereas a forecast just gives a probability of such an event taking place.
-Forecasting is much easier than prediction, as you can use simple statistical analysis of glacial temperature trends to get a pretty good estimate of what the weather will be like, however the economic value is much less than an accurate prediction. Weather and near term earthquake forecasting has created huge socioeconomic benefit to people in areas that are most effected by adverse phenomena, but thre is still much left to do.&lt;/p&gt;
+&lt;p&gt;Because we’ll never &lt;em&gt;truly&lt;/em&gt; have the &lt;a href=&quot;https://en.wikipedia.org/wiki/Uncertainty_principle&quot;&gt;initial state of anything,&lt;/a&gt; perfectly accurate forecasts &amp;amp; predictions of future events are currently impossible. But for larger scale phenomena like the weather or &lt;strong&gt;Earthquakes&lt;/strong&gt;, we’ve gotten really good at creating accurate, reliable forecasts. The major difference between a forecast and a prediction is a prediction states that a particular event will happen at time X assuming Y conditions are met, whereas a forecast just gives a probability of such an event taking place.&lt;/p&gt;
+
+&lt;p&gt;To forecast is much easier than to predict, for example in early weather forecasts, using glacial records it quite reasonable to forecast 40% chance of precipitation on any particular day in may in a particular area, these statistical models were quite accurate but were not precise enough for any reasonable use beyond strategic decisions. 
+The requirements to predict events are very similar to those of near term forecasts, they need more of the initial state to reach reasonable conclusions.&lt;/p&gt;
 
 &lt;p&gt;I’ve thrown my hat into the fray of near term earthquake prediction &amp;amp; forecasting, and over the next week or so I’ll be discussing different topics that are important when trying to tackle such a challenging problem.&lt;/p&gt;
 
