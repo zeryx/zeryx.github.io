@@ -4,12 +4,14 @@ title:  "keeping tabs on The Big One"
 date:   2015-09-07 19:25:51
 categories: data_science
 ---
-Prediction can be really, *really* hard. 
+Prediction is be really, *really* hard. 
 
 [Chaos theory][ChaosTheory] has destroyed more prediction models than any government conspiracy or act of corporate espionage. Trying to predict what will happen within a given time-frame for natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.
 
-Because we'll never *truly* have the [initial state of anything,][hsp] perfectly accurate predictive systems are currently impossible. But for larger scale phenomena like the weather or **Earthquakes**, we've gotten really good at creating accurate, reliable forecasts. The major difference between a forecast and a prediction is a prediction states that a particular event will happen at time X assuming Y conditions are met, whereas a forecast just gives a probability of such an event taking place.
-Forecasting is much easier than prediction, as you can use simple statistical analysis of glacial temperature trends to get a pretty good estimate of what the weather will be like, however the economic value is much less than an accurate prediction. Weather and near term earthquake forecasting has created huge socioeconomic benefit to people in areas that are most effected by adverse phenomena, but thre is still much left to do.
+Because we'll never *truly* have the [initial state of anything,][hsp] perfectly accurate forecasts & predictions of future events are currently impossible. But for larger scale phenomena like the weather or **Earthquakes**, we've gotten really good at creating accurate, reliable forecasts. The major difference between a forecast and a prediction is a prediction states that a particular event will happen at time X assuming Y conditions are met, whereas a forecast just gives a probability of such an event taking place.
+
+To forecast is much easier than to predict, for example in early weather forecasts, using glacial records it quite reasonable to forecast 40% chance of precipitation on any particular day in may in a particular area, these statistical models were quite accurate but were not precise enough for any reasonable use beyond strategic decisions. 
+The requirements to predict events are very similar to those of near term forecasts, they need more of the initial state to reach reasonable conclusions.
 
 I've thrown my hat into the fray of near term earthquake prediction & forecasting, and over the next week or so I'll be discussing different topics that are important when trying to tackle such a challenging problem.
 
