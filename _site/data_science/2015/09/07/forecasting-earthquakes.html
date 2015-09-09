@@ -13,14 +13,13 @@
 
   ga('create', 'UA-52299016-3', 'auto');
   ga('send', 'pageview');
-
 </script>
 
   <title>keeping tabs on The Big One</title>
-  <meta name="description" content="Forecasting stuff can be really, really hard.">
+  <meta name="description" content="Prediction can be really, really hard.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://zeryx.github.io/data_science/2015/09/07/predicting-earthquakes.html">
+  <link rel="canonical" href="http://zeryx.github.io/data_science/2015/09/07/forecasting-earthquakes.html">
   <link rel="alternate" type="application/rss+xml" title="zeryx's blog of cool ML stuff" href="http://zeryx.github.io/feed.xml" />
 </head>
 
@@ -72,13 +71,14 @@
   </header>
 
   <article class="post-content">
-    <p>Forecasting stuff can be really, <em>really</em> hard.</p>
+    <p>Prediction can be really, <em>really</em> hard.</p>
 
-<p><a href="https://en.wikipedia.org/wiki/Chaos_theory">Chaos theory</a> has destroyed more forecasting models than any government conspiracy or act of corporate espionage. Trying to predict what happens next in natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.</p>
+<p><a href="https://en.wikipedia.org/wiki/Chaos_theory">Chaos theory</a> has destroyed more prediction models than any government conspiracy or act of corporate espionage. Trying to predict what will happen within a given time-frame for natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.</p>
 
-<p>Because we’ll never <em>truly</em> have the <a href="https://en.wikipedia.org/wiki/Uncertainty_principle">initial state of anything,</a> accurate molecular dynamics and prediction are still off the table. But for larger scale phenomena like the weather or <strong>Earthquakes</strong>, we’ve been able to make reasonable predictive models that have created huge socioeconomic benefit for those who rely on such systems, like farmers who can now grow more crops, or those living in at-risk areas where accurate early warning systems can literally be the difference between life and death.</p>
+<p>Because we’ll never <em>truly</em> have the <a href="https://en.wikipedia.org/wiki/Uncertainty_principle">initial state of anything,</a> perfectly accurate predictive systems are currently impossible. But for larger scale phenomena like the weather or <strong>Earthquakes</strong>, we’ve gotten really good at creating accurate, reliable forecasts. The major difference between a forecast and a prediction is a prediction states that a particular event will happen at time X assuming Y conditions are met, whereas a forecast just gives a probability of such an event taking place.
+Forecasting is much easier than prediction, as you can use simple statistical analysis of glacial temperature trends to get a pretty good estimate of what the weather will be like, however the economic value is much less than an accurate prediction. Weather and near term earthquake forecasting has created huge socioeconomic benefit to people in areas that are most effected by adverse phenomena, but thre is still much left to do.</p>
 
-<p>I’ve thrown my hat into the fray of earthquake prediction, and over the next week or so I’ll be discussing different topics that are important when trying to tackle such a challenging problem.</p>
+<p>I’ve thrown my hat into the fray of near term earthquake prediction &amp; forecasting, and over the next week or so I’ll be discussing different topics that are important when trying to tackle such a challenging problem.</p>
 
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -94,7 +94,7 @@
 <h3 id="how-to-track-earthquakes">how to track earthquakes</h3>
 <p>Earthquakes have plagued our species for our entire existence, those who live far away from active fault-lines may take them for granted, but ask  anyone on the continental west coast of the USA about earthquakes and they would tell you how important early warning systems are for their business and personal well-being.</p>
 
-<p>Prediction of large earthquake events is crucial to many peoples lives, and earthquake forecasts are becoming closer and closer to reality. The biggest boons to seismologists in recent decades are ever increasingly powerful supercomputers (like <a href="https://www.olcf.ornl.gov/titan/">titan</a>), and a substantially better understanding of core variables.</p>
+<p>near term forecasts of large earthquake events is crucial to many peoples lives, and earthquake forecasts are becoming closer and closer to reality. The biggest boons to seismologists in recent decades are ever increasingly powerful supercomputers (like <a href="https://www.olcf.ornl.gov/titan/">titan</a>), and a substantially better understanding of core variables.</p>
 
 <p><a name="coreVariables"></a></p>
 
@@ -134,7 +134,7 @@
 <h4 id="historic-global-earthquakes">historic global Earthquakes</h4>
 <p><code>History doesn't repeat itself, but it does rhyme. - Mark Twain</code></p>
 
-<p>If you ask an analyst who plans to predict any future event, the very first piece of data most of them will ask for ask for is historic records where similar events to what is being predicted have occured.
+<p>If you ask any analyst what they need to forecast a future event, the very first piece of data most of them will ask for ask for will be all of the historic data containing events similar to what is being forecast.
 Thankfully the US National Centres for Environmental Information (NOAA) have some very nice <a href="https://www.ngdc.noaa.gov/hazard/earthqk.shtml">databases</a> containing a wealth of accurate earthquake events, this is arguably the most critical variable as fault-lines and at-risk areas would be pretty hard to discover without them.</p>
 
 <p>The third variable is <em>historic earthquake data</em>

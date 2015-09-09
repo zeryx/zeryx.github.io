@@ -4,13 +4,14 @@ title:  "keeping tabs on The Big One"
 date:   2015-09-07 19:25:51
 categories: data_science
 ---
-Forecasting stuff can be really, *really* hard. 
+Prediction can be really, *really* hard. 
 
-[Chaos theory][ChaosTheory] has destroyed more forecasting models than any government conspiracy or act of corporate espionage. Trying to predict what happens next in natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.
+[Chaos theory][ChaosTheory] has destroyed more prediction models than any government conspiracy or act of corporate espionage. Trying to predict what will happen within a given time-frame for natural systems is highly dependent on initial conditions and changes to state (if any), requiring powerful computers to get even close approximations.
 
-Because we'll never *truly* have the [initial state of anything,][hsp] accurate molecular dynamics & and prediction are still off the table. But for larger scale phenomena like the weather or **Earthquakes**, we've been able to make reasonable predictive models that have created huge socioeconomic benefit for those who rely on such systems, like farmers who can now grow more crops, or those living in at-risk areas where accurate early warning systems can literally be the difference between life and death.
+Because we'll never *truly* have the [initial state of anything,][hsp] perfectly accurate predictive systems are currently impossible. But for larger scale phenomena like the weather or **Earthquakes**, we've gotten really good at creating accurate, reliable forecasts. The major difference between a forecast and a prediction is a prediction states that a particular event will happen at time X assuming Y conditions are met, whereas a forecast just gives a probability of such an event taking place.
+Forecasting is much easier than prediction, as you can use simple statistical analysis of glacial temperature trends to get a pretty good estimate of what the weather will be like, however the economic value is much less than an accurate prediction. Weather and near term earthquake forecasting has created huge socioeconomic benefit to people in areas that are most effected by adverse phenomena, but thre is still much left to do.
 
-I've thrown my hat into the fray of earthquake prediction, and over the next week or so I'll be discussing different topics that are important when trying to tackle such a challenging problem.
+I've thrown my hat into the fray of near term earthquake prediction & forecasting, and over the next week or so I'll be discussing different topics that are important when trying to tackle such a challenging problem.
 
 ## Table of Contents ##
 1. [how to track earthquakes](#howToTrackQuakes)
@@ -25,7 +26,7 @@ I've thrown my hat into the fray of earthquake prediction, and over the next wee
 ### how to track earthquakes ###
 Earthquakes have plagued our species for our entire existence, those who live far away from active fault-lines may take them for granted, but ask  anyone on the continental west coast of the USA about earthquakes and they would tell you how important early warning systems are for their business and personal well-being.
 
-Prediction of large earthquake events is crucial to many peoples lives, and earthquake forecasts are becoming closer and closer to reality. The biggest boons to seismologists in recent decades are ever increasingly powerful supercomputers (like [titan][titan]), and a substantially better understanding of core variables.
+near term forecasts of large earthquake events is crucial to many peoples lives, and earthquake forecasts are becoming closer and closer to reality. The biggest boons to seismologists in recent decades are ever increasingly powerful supercomputers (like [titan][titan]), and a substantially better understanding of core variables.
 
 
 <a name="coreVariables"></a>
@@ -65,7 +66,7 @@ The second variable is *K-Index*.
 #### historic global Earthquakes ####
 `History doesn't repeat itself, but it does rhyme. - Mark Twain`
 
-If you ask an analyst who plans to predict any future event, the very first piece of data most of them will ask for ask for is historic records where similar events to what is being predicted have occured.
+If you ask any analyst what they need to forecast a future event, the very first piece of data most of them will ask for ask for will be all of the historic data containing events similar to what is being forecast.
 Thankfully the US National Centres for Environmental Information (NOAA) have some very nice [databases][noaa] containing a wealth of accurate earthquake events, this is arguably the most critical variable as fault-lines and at-risk areas would be pretty hard to discover without them.
 
 The third variable is *historic earthquake data*
