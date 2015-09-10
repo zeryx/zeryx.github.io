@@ -2,7 +2,7 @@
 layout: post
 title:  "Finding signal with CUDA"
 date:   2015-09-09 13:19:51
-categories: neural_nets
+categories: cuda
 ---
 
 GPUs are really cool devices.
