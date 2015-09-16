@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dynamic Kernel Instruction Queuing"
-date:   2015-09-09 13:19:51
+date:   2015-09-15 22:19:51
 categories: CUDA
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Dynamic Kernel Instruction Queuing"
 date:   2015-09-09 13:19:51
-categories: CUDA, tips
+categories: CUDA
 ---
 
 Creating long and complex can be tricky, especially if the work envelope is changes alot. One way to organize such a structure is with many smaller functions, but that would still require re-compiling every time you want to adjust your kernel’s structure.
