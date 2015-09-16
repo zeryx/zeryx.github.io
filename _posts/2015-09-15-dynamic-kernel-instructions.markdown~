@@ -66,7 +66,7 @@ A single object of order contains all of the knowledge necessary for an optimize
 
 {% highlight C++ %}
 __global__ void NetKern(kernelArray<double> Vec, kernelArray<int> params, Order* commandQueue, 
-		int hour, kernelArray<double> meanCh, kernelArray<double> stdCh, size_t device_offset){
+	int hour, kernelArray<double> meanCh, kernelArray<double> stdCh, size_t device_offset){
 
 	const int idx = blockIdx.x * blockDim.x + threadIdx.x; // for each thread is one individual
 	const int ind = params.array[10];
