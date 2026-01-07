@@ -3,83 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Howe Sound Window Cleaning | Squamish, Whistler, West Vancouver</title>
+    <title>Howe Sound Window Cleaning | Strata, Commercial & Residential</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <div class="contact-bar">
-                <span>Call Us Now: <a href="tel:6048157799">(604) 815-7799</a></span>
-                <span><a href="mailto:howesoundwindowcleaning@hotmail.com">howesoundwindowcleaning@hotmail.com</a></span>
+        <div class="top-bar">
+            <div class="container">
+                <p>Call Us Now: <a href="tel:6048157799">(604) 815-7799</a> | <a href="mailto:howesoundwindowcleaning@hotmail.com">howesoundwindowcleaning@hotmail.com</a></p>
             </div>
-            <nav>
-                <img src="assets/Paul Sutton Logo.jpg" alt="Howe Sound Logo" class="logo">
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav class="container">
+            <div class="logo">
+                <img src="https://static.wixstatic.com/media/6e4607_c66256c98eb440b8815a433654cc86b3~mv2.jpg/v1/crop/x_228,y_177,w_567,h_274/fill/w_233,h_113,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Paul%20Sutton%20Logo.jpg" alt="Howe Sound Window Cleaning Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="hero">
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://static.wixstatic.com/media/6e4607_7fa0d4a4908b4a07a5dc06963690baf9~mv2_d_3601_2745_s_4_2.jpg/v1/fill/w_1200,h_600,al_c,q_80/6e4607_7fa0d4a4908b4a07a5dc06963690baf9~mv2_d_3601_2745_s_4_2.jpg');">
         <div class="container">
             <h1>Howe Sound Window Cleaning</h1>
-            <p>Strata, Commercial & Residential Services in the Sea to Sky Corridor</p>
+            <p>Serving Squamish, Whistler, Furry Creek, and West Vancouver since 2003.</p>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <img src="assets/Apartment Icon.png" alt="Strata">
-                    <h3>Strata Units</h3>
-                </div>
-                <div class="service-card">
-                    <img src="assets/building icon.png" alt="Commercial">
-                    <h3>Commercial Units</h3>
-                </div>
-                <div class="service-card">
-                    <img src="assets/House Logo.png" alt="Residential">
-                    <h3>Residential Homes</h3>
-                </div>
+    <section id="services" class="container section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="https://static.wixstatic.com/media/6e4607_306095c2b2a34a27904bb5511df43667~mv2.png/v1/fill/w_100,h_100,al_c,q_85/Apartment%20Icon.png" alt="Strata">
+                <h3>Strata Units</h3>
             </div>
-            <p class="description">Windows and frames are cleaned by hand using environmentally friendly biodegradable soap and/or water fed pole with warm filtered water leaving no residue or streaks. We maintain a two million dollar liability insurance policy.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <h3>History</h3>
-                <p>Paul Sutton founded Howe Sound Window Cleaning in 2003... [Your history text here]</p>
-                <h3>Our Mission</h3>
-                <p>Howe Sound Window Cleaning is committed to customer satisfaction... [Your mission text here]</p>
+            <div class="service-item">
+                <img src="https://static.wixstatic.com/media/6e4607_7bb1b9d3a944432b9bd54b966aafe93c~mv2.png/v1/fill/w_100,h_100,al_c,q_85/building%20icon.png" alt="Commercial">
+                <h3>Commercial Units</h3>
+            </div>
+            <div class="service-item">
+                <img src="https://static.wixstatic.com/media/6e4607_c63baf47ee664f5cb95983d4592fea79~mv2.png/v1/fill/w_100,h_100,al_c,q_85/House%20Logo.png" alt="Residential">
+                <h3>Residential Homes</h3>
             </div>
         </div>
+        <div class="service-description">
+            <p>Windows and frames are cleaned by hand using environmentally friendly biodegradable soap and/or water fed pole with warm filtered water leaving no residue or streaks. If required, furniture is carefully moved to access the window for ease of cleaning, and then replaced.</p>
+            <p><strong>Howe Sound Window Cleaning maintains a two million dollar liability insurance policy.</strong></p>
+        </div>
     </section>
 
-    <section id="testimonials">
+    <section id="about" class="bg-light section">
+        <div class="container about-grid">
+            <div>
+                <h2>About Us</h2>
+                <h4 class="accent">History</h4>
+                <p>Paul Sutton founded Howe Sound Window Cleaning in 2003 as he recognized a need for such services in the Sea to Sky Corridor. Paul's strong work ethic and attention to detail has helped him grow his business to where it is today. Howe Sound Window Cleaning's friendly, professional and personal management style have, over the years helped them gain a wide range of experience in servicing properties ranging from residential and townhouse complexes to commercial properties.</p>
+                
+                <h4 class="accent">Our Mission</h4>
+                <p>Howe Sound Window Cleaning is committed to customer satisfaction by meeting or exceeding the highest standards of service, and to deliver this service with an open caring and thoughtful management style. As professionals, clients can expect that we will not sublet or subcontract accounts. Our mission of excellence will also include maintaining a full compliment of insurance.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://static.wixstatic.com/media/6e4607_975f8aab17dc4a8fad4faf5cb5046870~mv2_d_3705_2417_s_4_2.jpg/v1/fill/w_500,h_400,al_c,q_80/6e4607_975f8aab17dc4a8fad4faf5cb5046870~mv2_d_3705_2417_s_4_2.jpg" alt="Cleaning in action">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container section">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://static.wixstatic.com/media/6e4607_f0947e5ebb624817b5d3e6169d0cf09c~mv2_d_3909_2722_s_4_2.jpg/v1/fill/w_400,h_300,al_c,q_80/6e4607_f0947e5ebb624817b5d3e6169d0cf09c~mv2_d_3909_2722_s_4_2.jpg" alt="Gallery 1">
+            <img src="https://static.wixstatic.com/media/6e4607_9fb583e7f9ac412cb9f853f2c3e33a87~mv2_d_3086_2484_s_4_2.jpg/v1/fill/w_400,h_300,al_c,q_80/6e4607_9fb583e7f9ac412cb9f853f2c3e33a87~mv2_d_3086_2484_s_4_2.jpg" alt="Gallery 2">
+            <img src="https://static.wixstatic.com/media/6e4607_da827b30ea4a495c8cc81b090bc79632~mv2_d_2832_2832_s_4_2.jpg/v1/fill/w_400,h_300,al_c,q_80/6e4607_da827b30ea4a495c8cc81b090bc79632~mv2_d_2832_2832_s_4_2.jpg" alt="Gallery 3">
+        </div>
+    </section>
+
+    <section class="testimonials section bg-blue">
         <div class="container">
-            <p class="quote">“I have been very satisfied with both residential and commercial window cleaning. Prompt professional service and new innovative equipment is something you can rely on.”</p>
+            <p class="quote">“I have been very satisfied with both residential and commercial window cleaning. Prompt professional service and new innovative equipment is something you can rely on with Howe Sound window cleaning. Always 100% satisfaction guaranteed.”</p>
             <p class="author">— Colleen Carney</p>
         </div>
     </section>
 
     <footer id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Howe Sound Window Cleaning</p>
-            <p>(604) 815-7799</p>
-            <p>PO Box 254, Squamish BC V8B 0A2</p>
-            <p>Attention: Paul Sutton</p>
+        <div class="container footer-grid">
+            <div>
+                <h3>Howe Sound Window Cleaning</h3>
+                <p>PO Box 254, Squamish BC V8B 0A2</p>
+                <p>Attention: Paul Sutton</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Phone: (604) 815-7799</p>
+                <p>Email: howesoundwindowcleaning@hotmail.com</p>
+            </div>
         </div>
+        <p class="copyright">&copy; 2026 Howe Sound Window Cleaning</p>
     </footer>
+
 </body>
 </html>
